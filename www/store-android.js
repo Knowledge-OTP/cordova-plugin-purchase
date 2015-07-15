@@ -927,7 +927,8 @@ store.verbosity = 0;
             purchaseToken: data.purchaseToken,
             developerPayload: data.developerPayload,
             receipt: data.receipt,
-            signature: data.signature
+            signature: data.signature,
+            purchaseTime: data.purchaseTime
         };
         if (product.state !== store.OWNED && product.state !== store.FINISHED && product.state !== store.APPROVED) {
             if (data.purchaseState === 0) {
